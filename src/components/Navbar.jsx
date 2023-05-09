@@ -11,15 +11,15 @@ const Navbar = () => {
         {/* this will appear only when screen is larger than md */}
         <div className={"hidden md:flex  justify-between mx-10 items-center my-6 bg-slate-100 p-5 rounded-lg fixed right-0 left-0 z-0"}>
             <h1 className={"text-2xl font-bold text-orange-500"}>News Nexus</h1>
-            <ul className="flex space-x-10">
+            <ul className="flex space-x-10 font-semibold">
                 <li>Home</li>
                 <li className={`cursor-pointer relative`} onClick={() => setOpenCategory(!openCategory)}>Categories <ArrowDropDownOutlinedIcon/></li>
-                <div className={`${openCategory? "flex-col" : "hidden"}  bg-slate-100 px-12 rounded-lg absolute w-max top-20 justify-between`}>
+                <div className={`${openCategory? "flex-col" : "hidden"}  bg-slate-100 px-12 rounded-lg absolute w-max top-20 justify-between font-semibold`}>
                     <ul>
-                        <li>Category 1</li>
-                        <li>Category 2</li>
-                        <li>Category 3</li>
-                        <li>Category 4</li>
+                        <li className={`my-2`}>Category 1</li>
+                        <li className={`my-2`}>Category 2</li>
+                        <li className={`my-2`}>Category 3</li>
+                        <li className={`my-2`}>Category 4</li>
                     </ul>
                 </div>
                 <li>About Us</li>
@@ -46,10 +46,10 @@ const Navbar = () => {
                 <li  onClick={() => setOpenCategory(!openCategory)} className={"cursor-pointer"}>Categories <ArrowDropDownOutlinedIcon/></li>
                 <div className={`${openCategory? 'block' : "hidden" }`}>
                     <ul>
-                        <li>Category 1</li>
-                        <li>Category 2</li>
-                        <li>Category 3</li>
-                        <li>Category 4</li>
+                        <li className={`my-2`}>Category 1</li>
+                        <li className={`my-2`}>Category 2</li>
+                        <li className={`my-2`}>Category 3</li>
+                        <li className={`my-2`}>Category 4</li>
                     </ul>
                 </div>
                 <li>About Us</li>
