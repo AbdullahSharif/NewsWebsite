@@ -9,21 +9,21 @@ const Navbar = () => {
   return (
     <div className={"relative"}>
         {/* this will appear only when screen is larger than md */}
-        <div className={"hidden md:flex  justify-between mx-10 items-center my-6 bg-slate-100 p-5 rounded-lg fixed right-0 left-0 z-0"}>
-            <h1 className={"text-2xl font-bold text-orange-500"}>News Nexus</h1>
-            <ul className="flex space-x-10 font-semibold">
-                <li>Home</li>
-                <li className={`cursor-pointer relative`} onClick={() => setOpenCategory(!openCategory)}>Categories <ArrowDropDownOutlinedIcon/></li>
+        <div className={"hidden md:flex  justify-between mx-10 items-center my-6 bg-slate-100 p-5 rounded-lg fixed right-0 left-0 z-10"}>
+            <h1 className={"text-4xl font-bold text-orange-500"}>News Nexus</h1>
+            <ul className="flex space-x-10 font-semibold text-xl">
+                <li className='hover:text-orange-500'>Home</li>
+                <li className={`cursor-pointer relative hover:text-orange-500`} onClick={() => setOpenCategory(!openCategory)}>Categories <ArrowDropDownOutlinedIcon/></li>
                 <div className={`${openCategory? "flex-col" : "hidden"}  bg-slate-100 px-12 rounded-lg absolute w-max top-20 justify-between font-semibold`}>
                     <ul>
-                        <li className={`my-2`}>Category 1</li>
-                        <li className={`my-2`}>Category 2</li>
-                        <li className={`my-2`}>Category 3</li>
-                        <li className={`my-2`}>Category 4</li>
+                        <li className={`my-2 hover:text-orange-500`}>Category 1</li>
+                        <li className={`my-2 hover:text-orange-500`}>Category 2</li>
+                        <li className={`my-2 hover:text-orange-500`}>Category 3</li>
+                        <li className={`my-2 hover:text-orange-500`}>Category 4</li>
                     </ul>
                 </div>
-                <li>About Us</li>
-                <li>Contact Us</li>
+                <li className='hover:text-orange-500'>About Us</li>
+                <li className='hover:text-orange-500'>Contact Us</li>
             </ul>
             <div className={"flex space-x-2 align-middle items-center"}>
                 <input type="search" placeholder="Search trending news" className={"text-lg p-2 outline-none rounded-lg text-orange-400"} />
@@ -31,12 +31,13 @@ const Navbar = () => {
             </div>
         </div>
 
-        <div className={"md:hidden flex justify-between mx-4 items-center my-3 bg-slate-100 p-5 rounded-lg fixed right-0 left-0"}>
+        
+        <div className={"md:hidden flex justify-between mx-4 items-center z-10 my-3 bg-slate-100 p-5 rounded-lg fixed right-0 left-0"}>
             <button onClick={() => {setOpenMenu(!openMenu)}}><MenuOutlinedIcon className={"w-1/12 text-xl"}/></button>
             <h1 className={"text-2xl font-bold text-orange-500 w-11/12 text-center "}>News Nexus</h1>
-        </div>
+        
 
-        <div className={`md:hidden bg-slate-100 p-5 ${openMenu ? 'block' : 'hidden'} h-max w-min z-10 absolute top-24 left-4 rounded-br-lg rounded-tr-lg `}>
+        <div className={`md:hidden bg-slate-100 p-5 ${openMenu ? 'block' : 'hidden'} h-max w-min z-20 absolute top-24 left-4 rounded-br-lg rounded-tr-lg `}>
             <div className={"flex space-x-1"}>
                 <input type="search" placeholder="Search trending news" className={"text-md p-2 outline-none rounded-lg text-orange-400"} />
                 <button><TravelExploreIcon/></button>
@@ -58,6 +59,8 @@ const Navbar = () => {
 
 
         </div>
+        </div>
+        
 
 
     </div>
