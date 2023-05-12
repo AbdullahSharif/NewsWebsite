@@ -39,7 +39,7 @@ const Sports = () => {
             <div className={`flex flex-col md:flex-row justify-center items-center md:w-1/2  flex-wrap md:space-x-8 md:space-y-8 space-y-6`}>
                 {techNews.map(sports => {
                     return (
-                        <Card news={sports} width={"28rem"} key={sports.newsTitle} imgWidth={"24rem"} />
+                        <Card news={sports} width={"28rem"} key={sports.newsTitle}  />
                     )
                 })}
                 

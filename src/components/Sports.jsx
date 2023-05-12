@@ -42,7 +42,7 @@ const Sports = () => {
                 
                 {sportsNews.map(sports => {
                     return (
-                        <Card news={sports} width={"28rem"} key={sports.newsTitle} imgWidth={"40rem"} />
+                        <Card news={sports} width={"28rem"} key={sports.newsTitle} />
                     )
                 })}
                 

@@ -56,7 +56,7 @@ const Carousel = () => {
         {terndingNews.map(news => {
               return (
                 <div key={news.newsTitle}>
-                    <Card  news={news} width={"32rem"} imgWidth="32rem" /> 
+                    <Card  news={news} /> 
                 </div>
                 
               );
