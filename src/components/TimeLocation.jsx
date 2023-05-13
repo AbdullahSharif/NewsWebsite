@@ -2,7 +2,7 @@
 
 function TimeLocation() {
   return (
-    <div>
+    <div className="p-8">
         <div className="flex justify-center items-center my-6">
             <p className="text-white text-xl font-extralight">Tuesday, 31 May 2023 | Local Time: 09:26 PM</p>
         </div>

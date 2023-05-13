@@ -12,22 +12,22 @@ const Navbar = () => {
         <div className={"hidden md:flex  justify-between mx-10 items-center my-6 bg-slate-100 p-5 rounded-lg fixed right-0 left-0 z-10"}>
             <h1 className={"text-4xl font-bold text-orange-500"}>News Nexus</h1>
             <ul className="flex space-x-10 font-semibold text-xl">
-                <li className='hover:text-orange-500'>Home</li>
-                <li className={`cursor-pointer relative hover:text-orange-500`} onClick={() => setOpenCategory(!openCategory)}>Categories <ArrowDropDownOutlinedIcon/></li>
+                <li className='hover:text-orange-500 transition ease-in-out'>Home</li>
+                <li className={`cursor-pointer relative hover:text-orange-500 transition ease-in-out`} onClick={() => setOpenCategory(!openCategory)}>Categories <ArrowDropDownOutlinedIcon/></li>
                 <div className={`${openCategory? "flex-col" : "hidden"}  bg-slate-100 px-12 rounded-lg absolute w-max top-20 justify-between font-semibold`}>
                     <ul>
-                        <li className={`my-2 hover:text-orange-500`}>Category 1</li>
-                        <li className={`my-2 hover:text-orange-500`}>Category 2</li>
-                        <li className={`my-2 hover:text-orange-500`}>Category 3</li>
-                        <li className={`my-2 hover:text-orange-500`}>Category 4</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Category 1</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Category 2</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Category 3</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Category 4</li>
                     </ul>
                 </div>
-                <li className='hover:text-orange-500'>About Us</li>
-                <li className='hover:text-orange-500'>Contact Us</li>
+                <li className='hover:text-orange-500 transition ease-in-out'>About Us</li>
+                <li className='hover:text-orange-500 transition ease-in-out'>Contact Us</li>
             </ul>
             <div className={"flex space-x-2 align-middle items-center"}>
                 <input type="search" placeholder="Search trending news" className={"text-lg p-2 outline-none rounded-lg text-orange-400"} />
-                <button><TravelExploreIcon/></button>
+                <button className="transition ease-out hover:scale-125"><TravelExploreIcon/></button>
             </div>
         </div>
 

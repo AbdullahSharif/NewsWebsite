@@ -1,3 +1,4 @@
+import TemperatureDetails from "./TemperatureDetails"
 import TimeLocation from "./TimeLocation"
 import WeatherButtons from "./WeatherButtons"
 import WeatherInputs from "./WeatherInputs"
@@ -10,6 +11,7 @@ function Weather() {
       <WeatherInputs/>
 
       <TimeLocation/>
+      <TemperatureDetails/>
     </div>
   )
 }
