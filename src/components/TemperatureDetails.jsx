@@ -1,6 +1,6 @@
 import Sun from "../assets/images/sun.png";
 import {BsThermometerHalf} from "react-icons/bs";
-import {FiDroplet} from "react-icons/fi";
+import {FiDroplet, FiSun, FiSunset, FiArrowUp, FiArrowDown} from "react-icons/fi";
 import {TiWeatherWindyCloudy} from "react-icons/ti";
 
 function TemperatureDetails() {
@@ -31,6 +31,43 @@ function TemperatureDetails() {
                 <span className="font-bold">9 km/h</span>
             </div>
         </div>
+
+      </div>
+
+      <div className="flex flex-row justify-around my-12 text-white font-extralight text-[12px]">
+
+        <div className="flex flex-row justify-center items-center space-x-2">
+            <FiSun size={20}/>
+            <span>Rise:</span>
+            <span className="font-bold">04:50 AM</span>
+        </div>
+
+        <p>|</p>
+
+        <div className="flex flex-row justify-center items-center space-x-2">
+            <FiSunset size={20}/>
+            <span>SunSet:</span>
+            <span className="font-bold">09:06 PM</span>
+        </div>
+
+        <p className="hidden md:block">|</p>
+
+        <div className="hidden md:flex flex-row justify-center items-center space-x-2">
+            <FiArrowUp size={20}/>
+            <span>High:</span>
+            <span className="font-bold">39°</span>
+        </div>
+
+        <p className="hidden md:block">|</p>
+
+        <div className="hidden md:flex flex-row justify-center items-center space-x-2">
+            <FiArrowDown size={20}/>
+            <span>Low:</span>
+            <span className="font-bold">31°</span>
+        </div>
+
+
+
 
       </div>
     </div>
