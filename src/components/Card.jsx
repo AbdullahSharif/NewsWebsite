@@ -2,7 +2,7 @@
 
 function Card (props) {
   return (
-    <div className={`shadow-lg rounded-lg w-96`}>
+    <div className={`shadow-lg rounded-lg w-96 transition ease-out hover:scale-105 hover:cursor-pointer`}>
 
       <div className={"image text-center object-cover" }>
         <img src= {props.news.newsImage} alt="new_tag" className={`rounded-lg w-full h-48 object-cover`} />

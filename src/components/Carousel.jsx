@@ -51,7 +51,7 @@ const Carousel = () => {
 
   return (
     <div className={"relative"}>
-    <div id="content" className={`carousel p-4 flex items-center justify-start overflow-x-hidden space-x-4 scroll-smooth scrollbar-hide overflow-hidden`}>
+    <div id="content" className={`carousel p-4 flex items-center justify-start  space-x-4 scroll-smooth scrollbar-hide overflow-hidden`}>
         
         {terndingNews.map(news => {
               return (

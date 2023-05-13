@@ -3,6 +3,7 @@ import Hero from "./Hero"
 import Tech from "./Tech"
 import TrendingNews from "./TrendingNews"
 import Footer from "./Footer"
+import Weather from "./Weather"
 
 
 const Body = () => {
@@ -10,6 +11,7 @@ const Body = () => {
     <div className={"absolute mt-40 mx-10  right-0 left-0 text-3xl z-0"}>
         <Hero/>
         <TrendingNews/>
+        <Weather/>
         <Sports/>
         <Tech/>
         <Footer/>
