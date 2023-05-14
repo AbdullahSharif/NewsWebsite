@@ -1,10 +1,10 @@
 
 import sampleImg from "../assets/images/sun.png"
-function Forecast() {
+function Forecast({title}) {
   return (
     <div>
-      <div className='flex px-6 flex-col text-white mt-6'>
-        <p>Hourly Forcast</p>
+      <div className='flex px-6 flex-col text-white mt-6 capitalize'>
+        <p>{title}</p>
         <hr className='my-2' />
       </div>
 
