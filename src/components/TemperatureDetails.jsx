@@ -5,7 +5,7 @@ import {TiWeatherWindyCloudy} from "react-icons/ti";
 
 function TemperatureDetails() {
   return (
-    <div>
+    <div className="select-none">
       <div className="text-xl flex justify-center items-center text-cyan-300 py-6"> 
         <p>Cloudy or Whatever</p>
       </div>

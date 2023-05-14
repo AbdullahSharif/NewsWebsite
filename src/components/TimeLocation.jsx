@@ -2,7 +2,7 @@
 
 function TimeLocation() {
   return (
-    <div className="p-6">
+    <div className="p-6 select-none">
         <div className="flex justify-center items-center my-6 space-x-4">
             <p className="text-white text-xl font-extralight">Tuesday, 31 May 2023 </p>
             <p className="text-white text-xl font-extralight">|</p>

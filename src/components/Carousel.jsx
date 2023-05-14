@@ -55,7 +55,7 @@ const Carousel = () => {
         
         {terndingNews.map(news => {
               return (
-                <div key={news.newsTitle}>
+                <div key={news.newsTitle} className="transition ease-out hover:scale-125" >
                     <Card  news={news} /> 
                 </div>
                 

@@ -28,7 +28,7 @@ function WeatherButtons() {
         {
             cities.map(city => {
                 return (
-                <button key={city.id} className="text-white hover:text-black">
+                <button key={city.id} className="text-white hover:text-black hover:scale-125 transition ease-out">
                     {city.name}
                 </button>
                 );

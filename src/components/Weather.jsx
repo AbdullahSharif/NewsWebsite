@@ -1,3 +1,4 @@
+import Forecast from "./Forecast"
 import TemperatureDetails from "./TemperatureDetails"
 import TimeLocation from "./TimeLocation"
 import WeatherButtons from "./WeatherButtons"
@@ -12,6 +13,8 @@ function Weather() {
 
       <TimeLocation/>
       <TemperatureDetails/>
+      <Forecast/>
+      <Forecast/>
     </div>
   )
 }
