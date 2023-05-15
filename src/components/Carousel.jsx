@@ -1,44 +1,29 @@
-import { useState } from "react"
+// import { useState, useEffect } from "react"
 import Card from './Card';
-import TrendingNews from "../assets/images/trending_news.jpg";
+// import TrendingNews from "../assets/images/trending_news.jpg";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+// import { getFormatedHeadlines } from "../services/newServices";
 
 
 
-const Carousel = () => {
 
-    const [terndingNews, setTrendingNews] = useState([
-        {
-            newsImage: TrendingNews,
-            newsTitle : "title 1",
-            newsDesc:"description"
-        },
-        {
-            newsImage: TrendingNews,
-            newsTitle : "title 2",
-            newsDesc:"description"
-        },
-        {
-            newsImage: TrendingNews,
-            newsTitle : "title 3",
-            newsDesc:"description"
-        },
-        {
-            newsImage: TrendingNews,
-            newsTitle : "title 4",
-            newsDesc:"description"
-        },
-        {
-            newsImage: TrendingNews,
-            newsTitle : "title 5",
-            newsDesc:"description"
-        },
-        {
-            newsImage: TrendingNews,
-            newsTitle : "title 6",
-            newsDesc:"description"
-        },
-    ]);
+const Carousel = ({trendingNews}) => {
+
+    // const [trendingNews, setTrendingNews] = useState(null);
+
+    // useEffect(() => {
+    //     const fetchHeadlines = async (info, country) => {
+    //         const data = await getFormatedHeadlines(info, country)
+    //         setTrendingNews(data)
+
+    //     }
+
+    //     fetchHeadlines("top-headlines", "us")
+    {console.log(trendingNews)}
+    // }, [])
+
+
+
     const scrollLeft = () => {
         document.getElementById("content").scrollLeft -= 400;
     }
@@ -50,30 +35,39 @@ const Carousel = () => {
     
 
   return (
-    <div className={"relative"}>
-    <div id="content" className={`carousel p-4 flex items-center justify-start  space-x-4 scroll-smooth scrollbar-hide overflow-hidden`}>
+    <div className={"relative h-[26rem]"}>
+
+        {
         
-        {terndingNews.map(news => {
-              return (
-                <div key={news.newsTitle} className="transition ease-out hover:scale-125" >
-                    <Card  news={news} /> 
+            trendingNews && 
+            <div id="content" className={`carousel p-4 flex items-center justify-start  space-x-4 scroll-smooth scrollbar-hide overflow-hidden h-[26rem]`}>
+        
+                {trendingNews.map(news => {
+                    return (
+                        <div key={news.newsTitle} className="transition ease-out hover:scale-105" >
+                            <Card  news={news} className="transition ease-out hover:scale-125"/> 
+                        </div>
+                        
+                    );
+                })}
+
+                <div className={`absolute inset-0 flex justify-between items-center p-4`}>
+                    <button onClick={scrollLeft}>
+                        <ChevronLeft className={"font-bold shadow bg-white/80 rounded-full hover:bg-black hover:text-white"} sx={{fontSize: "3rem"}}/>
+                    </button>
+                    <button onClick={scrollRight}>
+                        <ChevronRight className={"font-bold shadow bg-white/80 rounded-full hover:bg-black hover:text-white"} sx={{fontSize: "3rem"}} />
+                    </button>
+                    
                 </div>
-                
-              );
-        })}
-
-        <div className={`absolute inset-0 flex justify-between items-center p-4`}>
-            <button onClick={scrollLeft}>
-                <ChevronLeft className={"font-bold shadow bg-white/80 rounded-full hover:bg-black hover:text-white"} sx={{fontSize: "3rem"}}/>
-            </button>
-            <button onClick={scrollRight}>
-                <ChevronRight className={"font-bold shadow bg-white/80 rounded-full hover:bg-black hover:text-white"} sx={{fontSize: "3rem"}} />
-            </button>
-            
-        </div>
 
         
-    </div>
+            </div>
+
+
+        
+        }
+    
     </div>
   )
 }

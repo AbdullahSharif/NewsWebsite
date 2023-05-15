@@ -26,7 +26,7 @@ const Navbar = () => {
                 <li className='hover:text-orange-500 transition ease-in-out'>Contact Us</li>
             </ul>
             <div className={"flex space-x-2 align-middle items-center"}>
-                <input type="search" placeholder="Search trending news" className={"text-lg p-2 outline-none rounded-lg text-orange-400"} />
+                <input type="search" placeholder="Search news around the world ..." className={"text-lg p-2 outline-none rounded-lg text-orange-400"} />
                 <button className="transition ease-out hover:scale-125"><TravelExploreIcon/></button>
             </div>
         </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
         <div className={`md:hidden bg-slate-100 p-5 ${openMenu ? 'block' : 'hidden'} h-max w-min z-20 absolute top-24 left-4 rounded-br-lg rounded-tr-lg `}>
             <div className={"flex space-x-1"}>
-                <input type="search" placeholder="Search trending news" className={"text-md p-2 outline-none rounded-lg text-orange-400"} />
+                <input type="search" placeholder="Search news around the world..." className={"text-md p-2 outline-none rounded-lg text-orange-400"} />
                 <button><TravelExploreIcon/></button>
             </div>
             <ul className={"flex-col items-center justify-center my-7 space-y-4 text-lg font-semibold"}>
