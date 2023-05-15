@@ -2,6 +2,7 @@ import SportImage from "../assets/images/sports.jpg";
 import Card from "./Card"
 import { useEffect, useState } from "react";
 import { getFormatedNews } from "../services/newServices";
+import { Link } from "react-router-dom";
 
 
 
@@ -60,14 +61,14 @@ const Sports = () => {
                         <h1 className=" font-extrabold text-3xl md:text-7xl my-8 md:my-40">Sports World</h1> 
                     </div>
 
-                    <div className={`flex flex-col md:flex-row justify-center items-center md:w-1/2  flex-wrap md:space-x-8 md:space-y-8 space-y-6`}>
+                    <Link className={`flex flex-col md:flex-row justify-center items-center md:w-1/2  flex-wrap md:space-x-8 md:space-y-8 space-y-6`}>
                         {sportsNews.slice(0,4).map(sports => {
                             return (
                                 <Card news={sports} width={"28rem"} key={sports.title}   />
                             )
                         })}
                         
-                    </div>
+                    </Link>
             
 
                 </div>

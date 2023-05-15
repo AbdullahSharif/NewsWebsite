@@ -1,4 +1,5 @@
 // import { useState, useEffect } from "react"
+import { Link } from 'react-router-dom';
 import Card from './Card';
 // import TrendingNews from "../assets/images/trending_news.jpg";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
@@ -44,9 +45,9 @@ const Carousel = ({trendingNews}) => {
         
                 {trendingNews.map(news => {
                     return (
-                        <div key={news.newsTitle} className="transition ease-out hover:scale-105" >
+                        <Link to={"/trending"} key={news.title} className="transition ease-out hover:scale-105" >
                             <Card  news={news} className="transition ease-out hover:scale-125"/> 
-                        </div>
+                        </Link>
                         
                     );
                 })}

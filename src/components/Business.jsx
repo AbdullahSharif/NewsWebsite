@@ -2,7 +2,7 @@
 import Card from "./Card"
 import { useState, useEffect } from "react";
 import { getFormatedNews } from "../services/newServices";
-
+import { Link } from "react-router-dom";
 
 
 const Business = () => {
@@ -41,7 +41,9 @@ const Business = () => {
             <div className={`flex flex-col md:flex-row justify-center items-center md:w-1/2  flex-wrap md:space-x-8 md:space-y-8 space-y-6`}>
                 {businessNews.slice(0,4).map(sports => {
                     return (
-                        <Card news={sports} width={"28rem"} key={sports.title}   />
+                        <Link key={sports.title}>
+                            <Card news={sports} width={"28rem"}/>
+                        </Link>
                     )
                 })}
                 
