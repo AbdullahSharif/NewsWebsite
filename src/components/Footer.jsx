@@ -7,8 +7,8 @@ const Footer = () => {
         <p>News</p>
         <h1 className="text-4xl font-bold">Nexus</h1>
       </div>
-      <div className="flex flex-col md:flex-row text-xl justify-center items-center space-x-24">
-        <div className="flex flex-col font-semibold md:mx-14 justify-center">
+      <div className="flex flex-col md:flex-row text-xl justify-center items-center md:space-x-24">
+        <div className="flex flex-col font-semibold md:mx-14 justify-center items-center md:items-start">
             <Link className="my-2 hover:text-orange-500">Home</Link>
             <Link className="my-2 hover:text-orange-500" >About</Link>
             <Link className="my-2 hover:text-orange-500">Contact Us</Link>

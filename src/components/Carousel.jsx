@@ -43,7 +43,7 @@ const Carousel = ({trendingNews}) => {
             trendingNews && 
             <div id="content" className={`carousel p-4 flex items-center justify-start  space-x-4 scroll-smooth scrollbar-hide overflow-hidden h-[26rem]`}>
         
-                {trendingNews.map(news => {
+                {trendingNews.slice(1,).map(news => {
                     return (
                         <Link to={"/trending"} key={news.title} className="transition ease-out hover:scale-105" >
                             <Card  news={news} className="transition ease-out hover:scale-125"/> 

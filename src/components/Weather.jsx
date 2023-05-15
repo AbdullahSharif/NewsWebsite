@@ -25,7 +25,7 @@ function Weather() {
 
   const changeColor = () => {
     if(!weather) return "from-cyan-600 to-blue-600";
-    const threshhold = units === "metric" ? 25 : 60;
+    const threshhold = units === "metric" ? 25 : 80;
     if(weather.temp < threshhold) {
       return "from-cyan-600 to-blue-600";
     }
@@ -37,7 +37,7 @@ function Weather() {
   }
 
   return (
-    <div className={`rounded-lg bg-gradient-to-br  p-8 ${changeColor()}`}>
+    <div className={`rounded-lg bg-gradient-to-br  p-8 ${changeColor()} shadow-2xl`}>
       <WeatherButtons setQuery={setQuery} />
       <WeatherInputs setQuery={setQuery} setUnits={setUnits} units={units}/>
 
