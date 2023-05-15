@@ -61,14 +61,16 @@ const Sports = () => {
                         <h1 className=" font-extrabold text-3xl md:text-7xl my-8 md:my-40">Sports World</h1> 
                     </div>
 
-                    <Link className={`flex flex-col md:flex-row justify-center items-center md:w-1/2  flex-wrap md:space-x-8 md:space-y-8 space-y-6`}>
+                    <div className={`flex flex-col md:flex-row justify-center items-center md:w-1/2  flex-wrap md:space-x-8 md:space-y-8 space-y-6`}>
                         {sportsNews.slice(0,4).map(sports => {
                             return (
-                                <Card news={sports} width={"28rem"} key={sports.title}   />
+                                <Link key={sports.title}>
+                                    <Card news={sports} width={"28rem"}/>
+                                </Link>
                             )
                         })}
                         
-                    </Link>
+                    </div>
             
 
                 </div>
