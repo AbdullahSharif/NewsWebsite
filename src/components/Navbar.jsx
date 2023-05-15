@@ -16,10 +16,16 @@ const Navbar = () => {
                 <li className={`cursor-pointer relative hover:text-orange-500 transition ease-in-out`} onClick={() => setOpenCategory(!openCategory)}>Categories <ArrowDropDownOutlinedIcon/></li>
                 <div className={`${openCategory? "flex-col" : "hidden"}  bg-slate-100 px-12 rounded-lg absolute w-max top-20 justify-between font-semibold`}>
                     <ul>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Category 1</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Category 2</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Category 3</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Category 4</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>General</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Science</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Technology</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Business</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Entertainment</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Sports</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Health</li>
+
+
+
                     </ul>
                 </div>
                 <li className='hover:text-orange-500 transition ease-in-out'>About Us</li>
@@ -47,10 +53,13 @@ const Navbar = () => {
                 <li  onClick={() => setOpenCategory(!openCategory)} className={"cursor-pointer"}>Categories <ArrowDropDownOutlinedIcon/></li>
                 <div className={`${openCategory? 'block' : "hidden" }`}>
                     <ul>
-                        <li className={`my-2`}>Category 1</li>
-                        <li className={`my-2`}>Category 2</li>
-                        <li className={`my-2`}>Category 3</li>
-                        <li className={`my-2`}>Category 4</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>General</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Science</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Technology</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Business</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Entertainment</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Sports</li>
+                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Health</li>
                     </ul>
                 </div>
                 <li>About Us</li>
