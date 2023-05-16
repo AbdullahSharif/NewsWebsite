@@ -65,7 +65,7 @@ const Sports = () => {
                     <div className={`flex flex-col md:flex-row justify-center items-center md:w-1/2  flex-wrap md:space-x-8 md:space-y-8 space-y-6`}>
                         {sportsNews.slice(0,4).map(sports => {
                             return (
-                                <Link key={sports.title}>
+                                <Link key={sports.title} to={"/sports"}>
                                     <Card news={sports} width={"28rem"}/>
                                 </Link>
                             )

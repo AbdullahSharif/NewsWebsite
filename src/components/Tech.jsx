@@ -36,7 +36,7 @@ const Tech = () => {
             <div className={`flex flex-col md:flex-row justify-center items-center md:w-1/2  flex-wrap md:space-x-8 md:space-y-8 space-y-6`}>
                 {techNews.slice(0,4).map(sports => {
                     return (
-                        <Link key={sports.title}>
+                        <Link key={sports.title} to={"/technology"}>
                             <Card news={sports} width={"28rem"}/>
                         </Link>
                     )
@@ -50,7 +50,7 @@ const Tech = () => {
 
         </div>
         <div className="flex justify-center mt-10 text-orange-500 hover:underline">
-            <a href="#" >More about Technology...</a>
+            <Link to={"/technology"} >More about Technology...</Link>
         </div>
 
         </div>

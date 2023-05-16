@@ -76,7 +76,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <li className='hover:text-orange-500 transition ease-in-out'><Link to={"about"}>About Us</Link></li>
-                <li className='hover:text-orange-500 transition ease-in-out'><Link to={"contactc"}>Contact Us</Link></li>
+                <li className='hover:text-orange-500 transition ease-in-out'><Link to={"contact"}>Contact Us</Link></li>
             </ul>
             <div className={"flex space-x-2 align-middle items-center"}>
                 <input type="search" placeholder="Search news around the world ..." className={"text-lg p-2 outline-none rounded-lg text-orange-400"} />
@@ -106,7 +106,7 @@ const Navbar = () => {
                             categories.map(cat => {
                                 return (
                                     <li key={cat.id} className={`my-2 hover:text-orange-500 transition ease-in-out first-letter:uppercase`}>
-                                        <Link>
+                                        <Link to={cat.name}>
                                             {cat.name}
                                         </Link>
                                     </li>
