@@ -63,13 +63,7 @@ const Navbar = () => {
 
                             })
                         }
-                        {/* <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>General</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Science</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Technology</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Business</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Entertainment</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Sports</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Health</li> */}
+                        
 
 
 
@@ -114,13 +108,7 @@ const Navbar = () => {
 
                             })
                         }
-                        {/* <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>General</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Science</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Technology</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Business</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Entertainment</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Sports</li>
-                        <li className={`my-2 hover:text-orange-500 transition ease-in-out`}>Health</li> */}
+                        
                     </ul>
                 </div>
                 <li>About Us</li>
