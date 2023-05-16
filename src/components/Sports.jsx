@@ -3,6 +3,7 @@ import Card from "./Card"
 import { useEffect, useState } from "react";
 import { getFormatedNews } from "../services/newServices";
 import { Link } from "react-router-dom";
+import CategoryNews from "../pages/CategoryNews";
 
 
 
@@ -75,7 +76,7 @@ const Sports = () => {
 
                 </div>
                 <div className="flex justify-center mt-10 text-orange-500 hover:underline">
-                    <a href="#" >More about Sports...</a>
+                    <Link to={"/sports"} element={<CategoryNews category={"sports"}/>}>More about Sports...</Link>
                 </div>
 
             </div>

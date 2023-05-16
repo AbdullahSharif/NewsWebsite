@@ -1,11 +1,18 @@
-import Home from "./pages/Home"
+// import Home from "./pages/Home"
+import Router from "./routes"
 
 function App() {
   
 
   return (
     <>
-      <Home/>
+
+     
+
+      <Router/>
+
+      
+      
     </>
   )
 }
